@@ -1,0 +1,48 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+    -   id: check-ast
+    -   id: check-builtin-literals
+    -   id: check-case-conflict
+    -   id: check-executables-have-shebangs
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-symlinks
+    -   id: check-toml
+    -   id: check-vcs-permalinks
+    -   id: check-xml
+    -   id: debug-statements
+    -   id: detect-aws-credentials
+        args: [--allow-missing-credentials]
+    -   id: detect-private-key
+    -   id: file-contents-sorter
+    -   id: forbid-new-submodules
+    -   id: mixed-line-ending
+    -   id: name-tests-test
+    -   id: no-commit-to-branch
+    -   id: pretty-format-json
+    -   id: requirements-txt-fixer
+    -   id: sort-simple-yaml
+-   repo: https://github.com/psf/black
+    rev: 26.5.1
+    hooks:
+    -   id: black
+        args: [--line-length=79]
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.3.0
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/pycqa/isort
+    rev: 9.0.0a3
+    hooks:
+    -   id: isort
+        args: [--profile=black, --line-length=79]
+-   repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.11.19
+    hooks:
+    -   id: uv-lock
