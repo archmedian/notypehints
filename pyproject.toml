@@ -1,5 +1,5 @@
 [project]
-name = "nocomments"
+name = "notypehints"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,8 +9,9 @@ dependencies = [
     "urllib3>=2.7.0",
 ]
 
-[tool.setuptools]
-py-modules = ["main"]
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
