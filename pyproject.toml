@@ -29,6 +29,11 @@ dev = [
 [tool.black]
 line-length = 79
 
+[tool.pytest]
+testpaths = [
+  "tests/unit"
+]
+
 [tool.coverage.report]
 exclude_lines = [
     "if __name__ == .__main__.:",

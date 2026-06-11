@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
-from main import main
+from notypehints import main
 
 try:
     import atheris
@@ -11,7 +11,7 @@ except ImportError:
 
 def fuzz_main(data: bytes) -> None:
     try:
-        result = main(data)
+        result = main.main(data)
         assert isinstance(result, str)
     except Exception as e:
         raise RuntimeError(f"Unexpected exception in main: {e}")
