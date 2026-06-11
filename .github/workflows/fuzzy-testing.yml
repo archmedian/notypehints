@@ -36,7 +36,7 @@ jobs:
       - name: Run fuzzy testing (short run for CI)
         run: |
           echo "Running Atheris fuzzy testing for 30 seconds per target..."
-          timeout 2s python fuzz_test.py || true
+          timeout 2s uv run python -m tests.fuzz.fuzz_test || true 
         continue-on-error: true
 
       - name: Upload fuzz artifacts
@@ -72,7 +72,7 @@ jobs:
       - name: Run extended fuzzy testing (5 seconds per target)
         run: |
           echo "Running extended Atheris fuzzy testing for 5 minutes per target..."
-          timeout 5s python fuzz_test.py || true
+          timeout 5s uv run python -m tests.fuzz.fuzz_test || true 
         continue-on-error: true
 
       - name: Upload extended fuzz artifacts
