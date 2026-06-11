@@ -1,4 +1,4 @@
-import main
+from notypehints import main
 
 
 def test_main():
