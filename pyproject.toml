@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 # watch atheris after 3.0.0 - that might enable >=3.12
-requires-python = ">=3.10.0,<3.12.0"
+requires-python = ">=3.10.20,<3.12.0"
 dependencies = [
     "urllib3>=2.7.0",
 ]
