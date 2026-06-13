@@ -16,5 +16,11 @@ def main(data: bytes) -> str:
         return f"Error: {str(e)}"
 
 
+def dummy_age_valid(age):
+    if age < 18:
+        raise ValueError("Age must be 18 or more")
+    return True
+
+
 if __name__ == "__main__":
     print(main(b"OK"))
