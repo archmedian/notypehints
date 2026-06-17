@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
         with:
-          python-version: "3.10.20"
+          python-version: "3.11.15"
 
       - name: Set up Clang
         uses: egor-tensin/setup-clang@763f0ed522044adec12eaa1a768edfb1a98a635a #v2
@@ -61,7 +61,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@c8813ba1bc76ebf779b911ad8ffccbf2e449cb48
         with:
-          python-version: "3.10.20"
+          python-version: "3.11.15"
 
       - name: Install dependencies
         run: |
