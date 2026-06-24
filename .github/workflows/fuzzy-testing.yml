@@ -23,7 +23,7 @@ jobs:
           python-version: "3.10.20"
 
       - name: Set up Clang
-        uses: egor-tensin/setup-clang@763f0ed522044adec12eaa1a768edfb1a98a635a #v2
+        uses: egor-tensin/setup-clang@3ad41ace36e412d32ea204f52ad30e59d80fd149 #v2
         with:
           platform: x64
 
