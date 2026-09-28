@@ -34,15 +34,15 @@ repos:
     -   id: black
         args: [--line-length=79]
 -   repo: https://github.com/pycqa/flake8
-    rev: 7.3.0
+    rev: 7.4.1
     hooks:
     -   id: flake8
 -   repo: https://github.com/pycqa/isort
-    rev: 9.0.0a3
+    rev: 9.0.1
     hooks:
     -   id: isort
         args: [--profile=black, --line-length=79]
 -   repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.11.21
+    rev: 0.12.19
     hooks:
     -   id: uv-lock
